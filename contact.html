@@ -1,11 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do</title>
-</head>
-<body>
+    <title>Restaurant Homepage</title>
+    <!-- CSS de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript de Bootstrap (nécessaire pour certaines fonctionnalités, pas forcément pour img-fluid) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/ec32befa3e.js" crossorigin="anonymous"></script>
     
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .btn-lg-custom {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            font-size: 1.25rem;
+            padding: 0.75rem 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+      <div class="logo"><a href="welcome.html"><img src="./assets/images/Itsu_sans_Fond.png" alt="logo"></a></div>
+      </div>
+    
+        <ul class="nav">
+          <li><a href="./welcome.html">ACCUEIL</a></li>
+          <li><a href="./menu.html">MENU</a></li>
+          <li><a href="pictures.html">GALERIE</a></li>
+          <li><a href="restaurant.html">À PROPOS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+        </header>
+      <section
+        class="col-lg-6 col-md-8 col-sm-12 mx-auto pb-5 p-0 mt-1 mt-xxl-2 bg-gradient"
+      >
+        <div class="section-tile text-center py-4">
+          <h3 class="about-title border-bottom-1 border-warning">Contactez-nous !</h3>
+        </div>
+
+        <div class="col-12 mx-auto">
+          <form class="px-5" method="get">
+            <div class="row">
+              <div
+                class="col-lg col-md col-sm-12 mb-3 animate__animated animate__fadeInLeft"
+              >
+                <label for="first-name" class="form-label">Prénom :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Prénom"
+                  required
+                />
+              </div>
+              <div
+                class="col-lg col-md col-sm-12 mb-3 animate__animated animate__fadeInRight"
+              >
+                <label for="last-name" class="form-label">Nom :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Nom"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3 animate__animated animate__fadeInUp">
+              <label for="email-input" class="form-label">Email :</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-input"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="mb-3 animate__animated animate__fadeInDown">
+              <label for="subject" class="form-label">Demande :</label>
+              <select
+                class="form-select"
+                id="subject"
+                name="subject"
+                aria-label="Default select example"
+                required
+              >
+                <option value="0">Sélectionnez votre demande</option>
+                <option value="1">Divers</option>
+                <option value="2">Réservation</option>
+                <option value="3">Plainte</option>
+              </select>
+            </div>
+            <div class="mb-3 animate__animated animate__fadeInDown">
+              <label for="message" class="form-label">Message :</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Votre message..."
+                required
+              ></textarea>
+            </div>
+            <div class="text-center col-12 mt-2">
+              <button
+                type="envoyer"
+                class="btn btn-lg-custom mx-auto"
+              >
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- / -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../app.js"></script>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>HORAIRE</h5>
+                    <p>Du mardi au samedi 12h00 à 14h30 et de 18h30 à 22h00.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>LIENS RAPIDE</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">ACCUEIL</a></li>
+                        <li><a href="#" class="text-white">MENU</a></li>
+                        <li><a href="#" class="text-white">GALERIE</a></li>
+                        <li><a href="#" class="text-white">À PROPOS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>CONTACT</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 40 Rue Locquenghien, 1000 Bruxelles</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@itsu.com</li>
+                    </ul>
+                    <div>
+                        <a href="#" class="text-white mr-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 ITSU. TOUS DROITS RÉSERVÉS.</p>
+            </div>
+        </div>
+    </footer>
+  </body>
 </html>

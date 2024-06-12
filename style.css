@@ -166,5 +166,91 @@ header {
     }
 }
 
-    
+.image-container {
+    position: relative;
+    display: inline-block;
+}
 
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn-outline-warning.btn-lg {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #ffc107;
+    color: #ffc107;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn-outline-warning.btn-lg:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.btn-outline-warning.btn-lg a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.btn-outline-warning.btn-lg:hover a {
+    color:#ffffff;
+
+}
+    
+.entree-section,
+.repas-section {
+    background-color: #ffc107;
+    padding: 20px;
+}
+
+.entree-section h1,
+.repas-section h1 {
+    margin-bottom: 20px;
+}
+
+.pagination .page-item .page-link {
+    background-color: #ffc107;
+    color: white;
+    border-color: #ffc107;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #e0a800;
+    color: white;
+    border-color: #e0a800;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+body {
+    background-color: #ffc107;
+    margin: 0;
+    padding: 0;
+}
+.menu-title {
+    background-color: #ffc107;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+.section {
+    background-color: #ffc107;
+    padding: 20px;
+    margin: 0;
+}
+.container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
